@@ -1,0 +1,11 @@
+|exercicio1aula4
+IN1 => saida1.IN0
+IN1 => saida2.IN0
+IN2 => saida1.IN1
+IN2 => saida2.IN1
+IN3 => saida1.IN1
+IN3 => saida2.IN1
+saida1 <= saida1.DB_MAX_OUTPUT_PORT_TYPE
+saida2 <= saida2.DB_MAX_OUTPUT_PORT_TYPE
+
+

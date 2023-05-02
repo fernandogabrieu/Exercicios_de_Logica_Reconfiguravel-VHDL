@@ -1,0 +1,12 @@
+|Aula11_exercicio1
+Se => Q[2]~reg0.DATAIN
+Se => Q[3].DATAIN
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+Q[0] << Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] << Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] << Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] << Se.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,15 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY exercicio3_aula7 IS 
+	PORT(B : IN bit_vector (3 downto 0);
+		  G : OUT bit_vector (3 downto 0));
+END ENTITY;
+
+ARCHITECTURE condicional OF exercicio3_aula7 IS
+
+	GEN: FOR i IN 3 DOWNTO 0 GENERATE
+		G(i) <= B(i) WHEN (i = 3) ELSE (B(i) XOR B(i+1));
+	END GENERATE GEN;
+
+END ARCHITECTURE;

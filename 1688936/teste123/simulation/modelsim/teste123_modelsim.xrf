@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/intelFPGA_lite/18.1/1688936/teste123/teste123.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/intelFPGA_lite/18.1/1688936/teste123/db/teste123.cbx.xml
+design_name = teste123
+instance = comp, \saida1~output\, saida1~output, teste123, 1
+instance = comp, \saida2~output\, saida2~output, teste123, 1
+instance = comp, \IN1~input\, IN1~input, teste123, 1
+instance = comp, \IN3~input\, IN3~input, teste123, 1
+instance = comp, \IN2~input\, IN2~input, teste123, 1
+instance = comp, \saida1~0\, saida1~0, teste123, 1
+instance = comp, \saida2~0\, saida2~0, teste123, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, teste123, 1

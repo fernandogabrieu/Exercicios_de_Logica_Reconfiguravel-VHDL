@@ -1,0 +1,9 @@
+|exercicio1_aula8
+d => q_sinc.DATAA
+d => q_assinc.DATAIN
+clk => q_sinc~reg0.CLK
+rst => q_sinc.OUTPUTSELECT
+q_sinc <= q_sinc~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_assinc <= d.DB_MAX_OUTPUT_PORT_TYPE
+
+

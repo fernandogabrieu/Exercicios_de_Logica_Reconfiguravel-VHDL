@@ -1,0 +1,14 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY teste1234 IS
+	GENERIC(N: INTEGER := 6);
+	PORT(A : IN BIT_VECTOR (2 TO N-1);
+		  B : OUT BIT_VECTOR(A'LENGTH);
+		  C : OUT BIT_VECTOR(A'RANGE(N)));
+END ENTITY;
+
+ARCHITECTURE gg OF teste1234 IS 
+BEGIN
+		C <= (0 => '1', N => '1', OTHERS => '0');
+END gg;

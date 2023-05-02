@@ -1,0 +1,45 @@
+|aula10_exercicio3
+cod[0] => Mux0.IN5
+cod[0] => Mux1.IN5
+cod[0] => Mux2.IN5
+cod[0] => Mux3.IN5
+cod[0] => Mux4.IN5
+cod[0] => Mux5.IN5
+cod[1] => Mux0.IN4
+cod[1] => Mux1.IN4
+cod[1] => Mux2.IN4
+cod[1] => Mux3.IN4
+cod[1] => Mux4.IN4
+cod[1] => Mux5.IN4
+A[0] => Add0.IN3
+A[0] => Add1.IN6
+A[0] => Mult0.IN2
+A[0] => Div0.IN2
+A[1] => Add0.IN2
+A[1] => Add1.IN5
+A[1] => Mult0.IN1
+A[1] => Div0.IN1
+A[2] => Add0.IN1
+A[2] => Add1.IN4
+A[2] => Mult0.IN0
+A[2] => Div0.IN0
+B[0] => Add0.IN6
+B[0] => Mult0.IN5
+B[0] => Div0.IN5
+B[0] => Add1.IN3
+B[1] => Add0.IN5
+B[1] => Mult0.IN4
+B[1] => Div0.IN4
+B[1] => Add1.IN2
+B[2] => Add0.IN4
+B[2] => Mult0.IN3
+B[2] => Div0.IN3
+B[2] => Add1.IN1
+saida[0] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

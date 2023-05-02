@@ -1,0 +1,18 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY exercicio2_aula7 IS
+	PORT(ENTRADA : IN std_logic_vector(0 TO 4);
+			 SAIDA : OUT std_logic_vector(0 TO 4);
+END ENTITY;
+
+ARCHITECTURE gen_cond OF exercicio2_aula7 IS
+BEGIN
+	GEN: FOR i IN 0 to 4 GENERATE
+		ENTRADA(i) <= '1';
+	END GENERATE GEN;
+	
+	GEN2: FOR i IN 0 to 4 GENERATE
+		SAIDA(i) <= ENTRADA(i) WHEN (i != '0') ELSE '0'; 
+	END GENERATE GEN2;
+END GENERATE;

@@ -1,0 +1,10 @@
+|Aula11_exercicio4
+A[0] => Equal0.IN1
+A[1] => Equal0.IN2
+A[2] => Equal0.IN0
+Z[0] <= Z[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Z[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Z[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Z[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,12 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY porta_nand_3in IS
+	PORT(a, b, c : IN  STD_LOGIC;
+		  d		 : OUT STD_LOGIC);
+END ENTITY;
+
+ARCHITECTURE logic OF porta_nand_3in IS
+BEGIN
+	d <= NOT(a AND b AND c);
+END;

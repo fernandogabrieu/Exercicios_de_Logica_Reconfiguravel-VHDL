@@ -1,0 +1,12 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY porta_and IS
+	PORT(a, b : IN  STD_LOGIC;
+		  c 	 : OUT STD_LOGIC);
+END ENTITY;
+
+ARCHITECTURE logic OF porta_and IS
+BEGIN
+	c <= a AND b;
+END;

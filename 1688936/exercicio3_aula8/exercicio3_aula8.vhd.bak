@@ -1,0 +1,27 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY exercicio3_aula8 IS
+	PORT(en : IN std_logic;
+		   a : IN std_logic_vector(1 downto 0);
+			y : IN std_logic_vector(3 downto 0));
+END ENTITY;
+
+ARCHITECTURE logic OF exercicio3_aula8 IS
+
+signal y_signal: std_logic_vector(3 downto 0);
+
+BEGIN
+	WITH a SELECT
+	y_signal <= "1000" WHEN "00",
+				   "0100" WHEN "01",
+				   "0010" WHEN "10",
+				   "0001" WHEN "11";
+			  
+	bloco1: BLOCK (en = '1')
+	BEGIN
+		y <= GUARDED y_signal;
+	END BLOCK bloco1;
+	
+END ARCHITECTURE	
+		

@@ -1,0 +1,30 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY Trabalho2_previa IS
+	GENERIC(N : INTEGER := 4);
+	PORT(KEY  : IN  STD_LOGIC_VECTOR(0 DOWNTO 0); -- CLK
+		  SW   : IN  STD_LOGIC_VECTOR(0 TO N+1);  -- CLEAR, Carga, D0 ao D3
+		  LEDR : OUT STD_LOGIC_VECTOR(2 TO N+1)); -- Q0 ao Q3
+END ENTITY;
+
+ARCHITECTURE reg_param_8x1 OF Trabalho2_previa IS
+BEGIN
+	
+	PROCESS(KEY(0), SW)
+	BEGIN
+		
+		LEDR(0) <= SW(1);
+		
+		GEN: FOR i IN 2 TO N+1 GENERATE
+			
+				IF (SW(0) = '1') THEN
+					LEDR(i) <= '0';
+				ELSIF (KEY(0)'EVENT AND KEY(0) = '1') THEN
+					LEDR(i) <= SW(i);
+				END IF;
+			
+		END GENERATE;
+	END PROCESS;
+	
+END;

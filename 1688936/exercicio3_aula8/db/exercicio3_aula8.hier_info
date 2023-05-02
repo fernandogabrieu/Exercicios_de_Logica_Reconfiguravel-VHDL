@@ -1,0 +1,19 @@
+|exercicio3_aula8
+en => y[0]$latch.LATCH_ENABLE
+en => y[1]$latch.LATCH_ENABLE
+en => y[2]$latch.LATCH_ENABLE
+en => y[3]$latch.LATCH_ENABLE
+a[0] => Mux0.IN5
+a[0] => Mux1.IN5
+a[0] => Mux2.IN5
+a[0] => Mux3.IN5
+a[1] => Mux0.IN4
+a[1] => Mux1.IN4
+a[1] => Mux2.IN4
+a[1] => Mux3.IN4
+y[0] <= y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

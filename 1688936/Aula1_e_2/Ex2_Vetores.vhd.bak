@@ -1,0 +1,12 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY Ex2_Vetores IS
+		 PORT (A : IN  std_logic_vector(0 to 1);
+				 X : OUT std_logic_vector(0 to 1));
+END Ex2_Vetores;
+
+ARCHITECTURE logica OF Ex2_Vetores IS
+BEGIN
+	X <= A;
+END logica;
